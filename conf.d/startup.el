@@ -9,3 +9,7 @@
 
 ; Show line numbers
 (global-linum-mode -1)
+
+; Disable emacs bell
+(setq ring-bell-function 'ignore)
+

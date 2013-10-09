@@ -1,7 +1,7 @@
 (when (eq system-type 'darwin)
   (set-face-attribute 'default nil :family "Monaco" :height 120)
  
-  (global-set-key (kbd "M-RET") 'ns-toggle-fullscreen)
+  (global-set-key (kbd "M-RET") 'toggle-frame-fullscreen)
 
 ;  (set-terminal-coding-system 'utf-8)
 ;  (set-keyboard-coding-system 'utf-8)
