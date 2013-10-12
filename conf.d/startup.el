@@ -13,3 +13,5 @@
 ; Disable emacs bell
 (setq ring-bell-function 'ignore)
 
+; Use spaces instead of tabs
+(setq-default indent-tabs-mode nil)

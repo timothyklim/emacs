@@ -8,7 +8,8 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(defvar my-packages '(melpa solarized-theme ghc ghci-completion flymake-haskell-multi flymake-hlint haskell-mode)
+(defvar my-packages '(melpa auto-complete solarized-theme ghc ghci-completion
+                      flymake-haskell-multi flymake-hlint haskell-mode)
   "my default packages")
 
 (dolist (p my-packages)
