@@ -27,3 +27,7 @@
 (depends-on "hi2")
 ; (depends-on "ergoemacs-mode")
 ; (depends-on "helm")
+; (depends-on "smex")
+; ace-jump-mode
+; ace-jump-buffer
+; lispy
