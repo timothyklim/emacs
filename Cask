@@ -20,6 +20,7 @@
 (depends-on "auto-complete")
 (depends-on "ghc")
 (depends-on "ghci-completion")
+; flycheck ;; TODO: replace flymake
 (depends-on "flymake-haskell-multi")
 (depends-on "flymake-hlint")
 (depends-on "haskell-mode")

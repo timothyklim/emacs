@@ -1,16 +1,14 @@
-(if window-system
-  (tool-bar-mode -1)
-  (menu-bar-mode -1))
-
-(setq inhibit-splash-screen -1)
-(setq inhibit-startup-echo-area-message -1)
-
+(tool-bar-mode -1)
+(menu-bar-mode -1)
 (scroll-bar-mode -1)
+
+(setq use-file-dialog nil)
+(setq use-dialog-box nil)
+(setq inhibit-splash-screen t)
+(setq inhibit-startup-echo-area-message t)
+(setq ring-bell-function 'ignore)
+(setq tab-width 2)
 
 (global-linum-mode -1)
 
-(setq ring-bell-function 'ignore)
-
-(setq-default indent-tabs-mode nil)
-
-(setq tab-width 2)
+(fset 'yes-or-no-p 'y-or-n-p)

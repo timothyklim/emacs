@@ -1,3 +1,5 @@
+(require 'haskell-simple-indent)
+
 (autoload 'ghc-init "ghc" nil t)
 
 (add-hook 'haskell-mode-hook
@@ -24,12 +26,6 @@
 
 ))
 
-; (eval-after-load "haskell-mode"
-;     '(define-key haskell-mode-map (kbd "C-c C-c") 'haskell-compile))
-; 
-; (eval-after-load "haskell-cabal"
-;     '(define-key haskell-cabal-mode-map (kbd "C-c C-c") 'haskell-compile))
-
 (setq ghc-ghc-options '("-XUnicodeSyntax"))
 
 (custom-set-variables
@@ -39,8 +35,6 @@
            (haskell-process-type . cabal-repl)
            (shm-lambda-indent-style . leftmost-parent)))))
 
-(require 'haskell-simple-indent)
-
 (define-key haskell-mode-map (kbd "TAB") 'haskell-simple-indent)
 (define-key haskell-mode-map (kbd "<backtab>") 'haskell-simple-indent-backtab)
 (define-key haskell-mode-map (kbd "<return>") 'haskell-simple-indent-newline-same-col)
@@ -48,3 +42,16 @@
 (define-key haskell-mode-map (kbd "C-<right>") 'haskell-move-right)
 (define-key haskell-mode-map (kbd "C-<left>") 'haskell-move-left)
 (define-key haskell-mode-map (kbd "<space>") 'haskell-mode-contextual-space)
+
+
+; (eval-after-load "haskell-mode"
+;     '(define-key haskell-mode-map (kbd "C-c C-c") 'haskell-compile))
+; 
+; (eval-after-load "haskell-cabal"
+;     '(define-key haskell-cabal-mode-map (kbd "C-c C-c") 'haskell-compile))
+
+(when (eq system-type 'darwin)
+  (eval-after-load "haskell-mode"
+    '(define-key haskell-mode-map (kbd "s-r") 'haskell-compile))
+  (eval-after-load "haskell-cabal"
+    '(define-key haskell-cabal-mode-map (kbd "s-r") 'haskell-compile)))
