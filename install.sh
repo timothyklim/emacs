@@ -2,4 +2,5 @@
 
 set -e
 
-cabal install ghc-mod
+cabal update
+cabal install ghc-mod structured-haskell-mode hasktags hdevtools

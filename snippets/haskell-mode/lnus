@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: language unicode syntax
+# key: lnus
+# --
+{-# LANGUAGE UnicodeSyntax #-}

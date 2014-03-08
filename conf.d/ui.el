@@ -3,6 +3,7 @@
   (menu-bar-mode -1))
 
 (setq inhibit-splash-screen -1)
+(setq inhibit-startup-echo-area-message -1)
 
 (scroll-bar-mode -1)
 
@@ -11,3 +12,5 @@
 (setq ring-bell-function 'ignore)
 
 (setq-default indent-tabs-mode nil)
+
+(setq tab-width 2)

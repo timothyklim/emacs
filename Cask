@@ -13,6 +13,7 @@
 (depends-on "smex")
 (depends-on "wrap-region")
 (depends-on "yasnippet")
+(depends-on "async")
 ; (depends-on "restclient")
 ; (depends-on "shut-up")
 (depends-on "solarized-theme")
@@ -24,10 +25,11 @@
 (depends-on "haskell-mode")
 ; (depends-on "textmate")
 (depends-on "shm")
-(depends-on "hi2")
 ; (depends-on "ergoemacs-mode")
 ; (depends-on "helm")
 ; (depends-on "smex")
 ; ace-jump-mode
 ; ace-jump-buffer
-; lispy
+; ensime
+; scala-mode2
+; sbt-mode
