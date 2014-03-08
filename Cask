@@ -27,7 +27,8 @@
 ; (depends-on "textmate")
 (depends-on "shm")
 ; (depends-on "ergoemacs-mode")
-; (depends-on "helm")
+(depends-on "helm")
+; (depends-on "helm-ag")
 ; (depends-on "smex")
 ; ace-jump-mode
 ; ace-jump-buffer

@@ -2,6 +2,13 @@
 
 (autoload 'ghc-init "ghc" nil t)
 
+; (custom-set-variables
+;  '(haskell-program-name "ghci")
+;  '(inferior-haskell-wait-and-jump t)
+;  '(haskell-font-lock-symbols t)
+;  '(haskell-stylish-on-save t)
+; )
+
 (add-hook 'haskell-mode-hook
   (lambda ()
     (ghc-init)
