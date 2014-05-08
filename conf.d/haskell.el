@@ -2,12 +2,15 @@
 
 (autoload 'ghc-init "ghc" nil t)
 
-; (custom-set-variables
-;  '(haskell-program-name "ghci")
+(add-to-list 'auto-mode-alist '("\\.chs\\'" . haskell-mode))
+(add-to-list 'auto-mode-alist '("\\.hsc\\'" . haskell-mode))
+
+(custom-set-variables
+  '(haskell-program-name "ghci")
 ;  '(inferior-haskell-wait-and-jump t)
 ;  '(haskell-font-lock-symbols t)
-;  '(haskell-stylish-on-save t)
-; )
+  '(haskell-stylish-on-save t)
+)
 
 (add-hook 'haskell-mode-hook
   (lambda ()
@@ -17,7 +20,7 @@
     
     (turn-on-eldoc-mode)
     (turn-on-haskell-doc)
-    (turn-on-haskell-unicode-input-method)
+    ; (turn-on-haskell-unicode-input-method)
 
     ; (turn-off-haskell-indent)
     ; (turn-off-haskell-indentation)
@@ -33,7 +36,7 @@
 
 ))
 
-(setq ghc-ghc-options '("-XUnicodeSyntax"))
+; (setq ghc-ghc-options '("-XUnicodeSyntax"))
 
 (custom-set-variables
  '(safe-local-variable-values

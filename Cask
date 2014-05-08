@@ -13,7 +13,9 @@
 (depends-on "smex")
 (depends-on "wrap-region")
 (depends-on "yasnippet")
+(depends-on "pretty-symbols")
 (depends-on "async")
+(depends-on "exec-path-from-shell")
 ; (depends-on "restclient")
 ; (depends-on "shut-up")
 (depends-on "solarized-theme")
@@ -35,3 +37,4 @@
 ; ensime
 ; scala-mode2
 ; sbt-mode
+(depends-on "idris-mode")
