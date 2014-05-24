@@ -4,11 +4,12 @@
 
 (add-to-list 'auto-mode-alist '("\\.chs\\'" . haskell-mode))
 (add-to-list 'auto-mode-alist '("\\.hsc\\'" . haskell-mode))
+(add-to-list 'auto-mode-alist '("\\.elm\\'" . haskell-mode))
 
 (custom-set-variables
   '(haskell-program-name "ghci")
-;  '(inferior-haskell-wait-and-jump t)
-;  '(haskell-font-lock-symbols t)
+  '(inferior-haskell-wait-and-jump t)
+  '(haskell-font-lock-symbols t)
   '(haskell-stylish-on-save t)
 )
 

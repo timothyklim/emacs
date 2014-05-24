@@ -34,7 +34,7 @@
 ; (depends-on "smex")
 ; ace-jump-mode
 ; ace-jump-buffer
-; ensime
-; scala-mode2
-; sbt-mode
+(depends-on "scala-mode2")
+; (depends-on "ensime" :git "https://github.com/ensime/ensime-src.git")
+(depends-on "sbt-mode")
 (depends-on "idris-mode")
