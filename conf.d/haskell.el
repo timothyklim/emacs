@@ -17,7 +17,7 @@
   (lambda ()
     (ghc-init)
 
-    (flymake-mode)
+    ; (flymake-mode)
     
     (turn-on-eldoc-mode)
     (turn-on-haskell-doc)

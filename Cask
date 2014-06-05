@@ -23,8 +23,9 @@
 (depends-on "ghc")
 (depends-on "ghci-completion")
 ; flycheck ;; TODO: replace flymake
-(depends-on "flymake-haskell-multi")
-(depends-on "flymake-hlint")
+; (depends-on "flymake-haskell-multi")
+; (depends-on "flymake-hlint")
+(depends-on "flycheck")
 (depends-on "haskell-mode")
 ; (depends-on "textmate")
 (depends-on "shm")

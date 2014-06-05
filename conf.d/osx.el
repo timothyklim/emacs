@@ -1,7 +1,9 @@
 (when (eq system-type 'darwin)
-  (set-face-attribute 'default nil :family "Monaco" :height 120)
+  (set-face-attribute 'default nil :family "Source Code Pro" :height 120)
  
   (global-set-key (kbd "M-RET") 'toggle-frame-fullscreen)
+
+  (setq x-underline-at-descent-line t)
 
 ;  (set-terminal-coding-system 'utf-8)
 ;  (set-keyboard-coding-system 'utf-8)
