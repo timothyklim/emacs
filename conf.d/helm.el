@@ -2,7 +2,7 @@
 
 (helm-mode 1)
 
-(global-set-key (kbd "C-x C-f") 'helm-projectile)
+(global-set-key (kbd "s-t") 'helm-projectile)
 
 (custom-set-variables
   '(helm-boring-file-regexp-list

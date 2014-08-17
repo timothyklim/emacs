@@ -7,4 +7,4 @@
         (append '(".DS_Store" "*.class" "*.o" "*.so" "*.elc" "*.jar" "*.png" "*.jpg" "*.jpeg" "*.gif" "*~") projectile-globally-ignored-files))
 
 (when (eq system-type 'darwin)
-  (global-set-key (kbd "s-t") 'projectile-find-file))
+  (global-set-key (kbd "s-T") 'projectile-find-file))
