@@ -1,6 +1,10 @@
+.cabal-sandbox
+cabal.sandbox.config
 ac-comphist.dat
 auto-save-list
 recentf
+projectile-bookmarks.eld
+projectile.cache
 .cask
 .DS_Store
 *.el~

@@ -1,3 +1,0 @@
-[submodule "vendor/ensime"]
-	path = vendor/ensime
-	url = git://github.com/prettynatty/ensime-snapshots.git

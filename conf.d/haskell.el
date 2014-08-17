@@ -1,3 +1,5 @@
+(add-to-list 'exec-path (f-join user-emacs-directory ".cabal-sandbox/bin"))
+
 (require 'haskell-simple-indent)
 
 (autoload 'ghc-init "ghc" nil t)

@@ -30,12 +30,14 @@
 ; (depends-on "textmate")
 (depends-on "shm")
 ; (depends-on "ergoemacs-mode")
+(depends-on "flx-ido")
+(depends-on "ido-vertical-mode")
 (depends-on "helm")
+(depends-on "helm-projectile")
 ; (depends-on "helm-ag")
-; (depends-on "smex")
 ; ace-jump-mode
 ; ace-jump-buffer
 (depends-on "scala-mode2")
-; (depends-on "ensime" :git "https://github.com/ensime/ensime-src.git")
+(depends-on "ensime")
 (depends-on "sbt-mode")
 (depends-on "idris-mode")

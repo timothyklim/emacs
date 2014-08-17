@@ -2,9 +2,8 @@
 
 (helm-mode 1)
 
-(when (eq system-type 'darwin)
-  (global-set-key (kbd "s-t") 'helm-for-files))
+(global-set-key (kbd "C-x C-f") 'helm-projectile)
 
 (custom-set-variables
   '(helm-boring-file-regexp-list
-     '("\\.git$" "\\.hg$" "\\._darcs$" "\\.cabal-sandbox$" "\\.idea$" "dist")))
+     '("\\.git" "\\.hg" "\\._darcs" "\\.cabal-sandbox" "\\.idea" "dist$" "tmp$" "\\.DS_Store" "\\.class$" "\\.o$" "\\.so$" "\\.elc$" "\\.jar$" "\\.png$" "\\.jpg$" "\\.jpeg$" "\\.gif$" "~$")))
