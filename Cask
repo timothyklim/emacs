@@ -15,6 +15,7 @@
 (depends-on "yasnippet")
 (depends-on "pretty-symbols")
 (depends-on "async")
+(depends-on "company")
 (depends-on "exec-path-from-shell")
 ; (depends-on "restclient")
 ; (depends-on "shut-up")
@@ -22,6 +23,7 @@
 (depends-on "auto-complete")
 (depends-on "ghc")
 (depends-on "ghci-completion")
+(depends-on "company-ghc")
 ; flycheck ;; TODO: replace flymake
 ; (depends-on "flymake-haskell-multi")
 ; (depends-on "flymake-hlint")

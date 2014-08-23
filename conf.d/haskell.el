@@ -68,3 +68,5 @@
     '(define-key haskell-mode-map (kbd "s-r") 'haskell-compile))
   (eval-after-load "haskell-cabal"
     '(define-key haskell-cabal-mode-map (kbd "s-r") 'haskell-compile)))
+
+(add-to-list 'company-backends 'company-ghc)
