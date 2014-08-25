@@ -19,8 +19,9 @@
 	("lambda" . ?λ)
 	("alpha" . ?α)
 	("beta" . ?β)
+	("Unit" . ?∅)
 	))
 
 (add-hook 'scala-mode-hook
             (lambda ()
-              (setq prettify-symbols-alist scala-prettify-symbols )))
+              (setq prettify-symbols-alist scala-prettify-symbols)))
