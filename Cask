@@ -17,6 +17,7 @@
 (depends-on "async")
 (depends-on "company")
 (depends-on "exec-path-from-shell")
+(depends-on "smooth-scrolling")
 ; (depends-on "restclient")
 ; (depends-on "shut-up")
 (depends-on "solarized-theme")
@@ -24,7 +25,6 @@
 (depends-on "ghc")
 (depends-on "ghci-completion")
 (depends-on "company-ghc")
-; flycheck ;; TODO: replace flymake
 ; (depends-on "flymake-haskell-multi")
 ; (depends-on "flymake-hlint")
 (depends-on "flycheck")

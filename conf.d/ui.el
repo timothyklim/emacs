@@ -12,3 +12,5 @@
 (global-linum-mode -1)
 
 (fset 'yes-or-no-p 'y-or-n-p)
+
+(global-prettify-symbols-mode t)
