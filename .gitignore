@@ -8,3 +8,4 @@ projectile.cache
 .cask
 .DS_Store
 *.el~
+vendor/*

@@ -8,6 +8,8 @@
 
 (setq confd-directory (f-join user-emacs-directory "conf.d"))
 
+(add-to-list 'load-path (f-join user-emacs-directory "vendor"))
+
 (mapc (lambda (path)
   (load
    (f-join confd-directory path)))

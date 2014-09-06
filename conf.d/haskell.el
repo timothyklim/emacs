@@ -70,3 +70,7 @@
     '(define-key haskell-cabal-mode-map (kbd "s-r") 'haskell-compile)))
 
 (add-to-list 'company-backends 'company-ghc)
+
+(require 'hindent)
+
+(define-key haskell-mode-map (kbd "C-c i") 'hindent/reformat-decl)
