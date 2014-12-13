@@ -1,7 +1,7 @@
 .cabal-sandbox
 cabal.sandbox.config
 ac-comphist.dat
-auto-save-list
+auto-save-list/
 recentf
 projectile-bookmarks.eld
 projectile.cache
@@ -9,3 +9,5 @@ projectile.cache
 .DS_Store
 *.el~
 vendor/*
+eshell/
+elpa/
