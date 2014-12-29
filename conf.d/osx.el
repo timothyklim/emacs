@@ -1,4 +1,4 @@
-(when (eq system-type 'darwin)
+(when (memq window-system '(mac ns))
   (set-face-attribute 'default nil :family "Source Code Pro" :height 120)
  
   (global-set-key (kbd "M-RET") 'toggle-frame-fullscreen)

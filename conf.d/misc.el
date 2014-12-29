@@ -3,3 +3,5 @@
 (setq auto-save-default nil)
 
 (setq enable-local-variables nil)
+
+(setq indent-tabs-mode nil)

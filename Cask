@@ -36,10 +36,12 @@
 (depends-on "ido-vertical-mode")
 (depends-on "helm")
 (depends-on "helm-projectile")
-; (depends-on "helm-ag")
+(depends-on "helm-ag")
 ; ace-jump-mode
 ; ace-jump-buffer
 (depends-on "scala-mode2")
 (depends-on "ensime")
 (depends-on "sbt-mode")
 (depends-on "idris-mode")
+(depends-on "rust-mode")
+(depends-on "flycheck-rust")

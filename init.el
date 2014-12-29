@@ -13,6 +13,8 @@
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
+(load (f-join user-emacs-directory "vars"))
+
 (mapc (lambda (path)
   (load
    (f-join confd-directory path)))
