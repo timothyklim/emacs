@@ -1,5 +1,6 @@
 (source melpa)
 (source org)
+(source gnu)
 
 (depends-on "cask")
 (depends-on "dash")
@@ -17,7 +18,7 @@
 (depends-on "async")
 (depends-on "company")
 (depends-on "exec-path-from-shell")
-(depends-on "smooth-scrolling")
+(depends-on "undo-tree")
 ; (depends-on "restclient")
 ; (depends-on "shut-up")
 (depends-on "solarized-theme")
