@@ -19,6 +19,7 @@
 (depends-on "company")
 (depends-on "exec-path-from-shell")
 (depends-on "undo-tree")
+(depends-on "simpleclip")
 ; (depends-on "restclient")
 ; (depends-on "shut-up")
 (depends-on "solarized-theme")

@@ -5,3 +5,5 @@
 (setq enable-local-variables nil)
 
 (setq indent-tabs-mode nil)
+
+(global-auto-revert-mode 1)
