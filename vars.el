@@ -5,7 +5,7 @@
       (mapcar (lambda (f) (concat "*" f)) ignored-files))
 
 (setq ignored-directories
-      '(".git" ".hg" "._darcs" ".cabal-sandbox" ".idea" "dist" "tmp" "target"))
+      '(".git" ".hg" "._darcs" ".cabal-sandbox" ".idea" ".ensime_cache" "dist" "tmp" "target"))
 
 (defun vars-replace-dots (list)
   (mapcar (lambda (f) (replace-regexp-in-string "\\." "\\\\." f)) list))

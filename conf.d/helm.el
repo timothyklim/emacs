@@ -11,3 +11,6 @@
   '(helm-boring-file-regexp-list ignored-file-regexp-list))
 
 (setq helm-M-x-fuzzy-match t)
+(setq helm-case-fold-search 'smart)
+(setq helm-locate-case-fold-search t)
+(setq helm-buffers-fuzzy-matching t)

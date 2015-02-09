@@ -8,6 +8,7 @@
 (setq inhibit-startup-echo-area-message t)
 (setq ring-bell-function 'ignore)
 (setq tab-width 2)
+(setq blink-cursor-mode 0)
 
 (global-linum-mode -1)
 
