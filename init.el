@@ -1,4 +1,4 @@
-; (setq debug-on-error t)
+(setq debug-on-error nil)
 
 (when (eq system-type 'darwin)
   (setq cask-path "/usr/local/opt/cask"))

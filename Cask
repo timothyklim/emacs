@@ -50,3 +50,4 @@
 (depends-on "rust-mode")
 (depends-on "flycheck-rust")
 ; omnisharp-emacs
+(depends-on "fsharp-mode")

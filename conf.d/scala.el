@@ -1,7 +1,5 @@
 (require 'ensime)
 
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
-
 (setq scala-prettify-symbols
   '(
     ("=>" . ?⇒)
@@ -25,4 +23,14 @@
 
 (add-hook 'scala-mode-hook
   (lambda ()
-    (setq prettify-symbols-alist scala-prettify-symbols)))
+    (ensime-scala-mode-hook)
+    (setq prettify-symbols-alist scala-prettify-symbols)
+  ))
+
+(defun ensime-fully-reload ()
+  "reload ensime"
+  (interactive)
+  (ensime-shutdown)
+  (ensime))
+
+(define-key scala-mode-map (kbd "C-x M-e") 'ensime-fully-reload)
