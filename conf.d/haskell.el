@@ -72,6 +72,4 @@
 (add-to-list 'company-backends 'company-ghc)
 (add-to-list 'company-backends 'company-cabal)
 
-(require 'hindent)
-
 (define-key haskell-mode-map (kbd "C-c i") 'hindent/reformat-decl)

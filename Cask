@@ -27,6 +27,7 @@
 (depends-on "solarized-theme")
 (depends-on "ghc")
 (depends-on "ghci-completion")
+(depends-on "hindent")
 (depends-on "company-ghc")
 (depends-on "company-cabal" :git "https://github.com/iquiw/company-cabal")
 ; (depends-on "flymake-haskell-multi")
@@ -47,7 +48,3 @@
 (depends-on "ensime")
 (depends-on "sbt-mode")
 (depends-on "idris-mode")
-(depends-on "rust-mode")
-(depends-on "flycheck-rust")
-; omnisharp-emacs
-(depends-on "fsharp-mode")

@@ -35,7 +35,7 @@
   ; (define-key global-map [?\s-L] 'shell-command)
   ; (define-key global-map [?\s-M] 'manual-entry)
   ; (define-key global-map [?\s-S] 'ns-write-file-using-panel)
-  ; (define-key global-map [?\s-a] 'mark-whole-buffer)
+  (define-key global-map [?\s-a] 'mark-whole-buffer)
   ; (define-key global-map [?\s-c] 'ns-copy-including-secondary)
   ; (define-key global-map [?\s-d] 'isearch-repeat-backward)
   ; (define-key global-map [?\s-e] 'isearch-yank-kill)
