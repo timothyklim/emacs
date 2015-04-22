@@ -41,6 +41,12 @@
 
 ; (setq ghc-ghc-options '("-XUnicodeSyntax"))
 
+(setq haskell-process-path-ghci
+      "ghci-ng")
+(setq haskell-process-args-ghci '("-ferror-spans"))
+(setq haskell-process-args-cabal-repl
+      '("--ghc-option=-ferror-spans" "--with-ghc=ghci-ng"))
+
 (custom-set-variables
  '(safe-local-variable-values
    (quote ((haskell-indent-spaces . 4)

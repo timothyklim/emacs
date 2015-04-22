@@ -30,6 +30,7 @@
 (depends-on "hindent")
 (depends-on "company-ghc")
 (depends-on "company-cabal" :git "https://github.com/iquiw/company-cabal")
+(depends-on "ide-backend-mode" :git "https://github.com/chrisdone/ide-backend-mode")
 ; (depends-on "flymake-haskell-multi")
 ; (depends-on "flymake-hlint")
 (depends-on "flycheck")
