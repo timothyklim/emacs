@@ -32,11 +32,11 @@
 
     (structured-haskell-mode 1)
 
-    (add-to-list 'company-backends 'company-ghc)
+    (set (make-local-variable 'company-backends)
+      '(company-ghc company-cabal company-yasnippet))
 
     (set-face-background 'shm-current-face "#eee8d5")
     (set-face-background 'shm-quarantine-face "lemonchiffon")
-
 ))
 
 ; (setq ghc-ghc-options '("-XUnicodeSyntax"))
@@ -74,8 +74,5 @@
     '(define-key haskell-mode-map (kbd "s-r") 'haskell-compile))
   (eval-after-load "haskell-cabal"
     '(define-key haskell-cabal-mode-map (kbd "s-r") 'haskell-compile)))
-
-(add-to-list 'company-backends 'company-ghc)
-(add-to-list 'company-backends 'company-cabal)
 
 (define-key haskell-mode-map (kbd "C-c i") 'hindent/reformat-decl)

@@ -7,8 +7,11 @@
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-echo-area-message t)
 (setq ring-bell-function 'ignore)
-(setq tab-width 2)
 (setq blink-cursor-mode 0)
+(setq-default
+  tab-width 2
+  standard-indent 2
+  indent-tabs-mode nil)
 
 (global-linum-mode -1)
 

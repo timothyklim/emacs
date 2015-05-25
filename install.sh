@@ -12,11 +12,13 @@ cabal install hasktags
 cabal install hlint
 cabal install hoogle
 cabal install hindent
-cabal install hdevtools
 cabal install stylish-haskell
-cabal install ghci-ng
-cabal install ghcid
 cabal install structured-haskell-mode
-cabal install ide-backend
-cabal install HaRe
 cabal install ghc-mod
+# cabal install ghci-ng
+# cabal install ghcid
+# cabal install ide-backend
+# cabal install HaRe
+# cabal install hdevtools
+
+go get -u github.com/nsf/gocode

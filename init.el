@@ -11,7 +11,8 @@
 (add-to-list 'load-path (f-join user-emacs-directory "vendor"))
 
 (when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
+  (exec-path-from-shell-initialize)
+  (exec-path-from-shell-copy-env "GOPATH"))
 
 (load (f-join user-emacs-directory "vars"))
 
