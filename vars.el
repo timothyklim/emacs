@@ -1,5 +1,5 @@
 (setq ignored-files
-      '(".DS_Store" ".class" ".o" ".so" ".elc" ".jar" ".png" ".jpg" ".jpeg" ".gif" "~"))
+      '(".DS_Store" ".class" ".o" ".so" ".elc" ".jar" ".png" ".jpg" ".jpeg" ".gif" "~" ".ensime"))
 
 (setq ignored-files-mask
       (mapcar (lambda (f) (concat "*" f)) ignored-files))

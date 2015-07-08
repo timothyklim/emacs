@@ -23,33 +23,43 @@
 (depends-on "simpleclip")
 (depends-on "smartparens")
 (depends-on "markdown-mode")
+; (depends-on "use-package")
 ; (depends-on "restclient")
 ; (depends-on "shut-up")
 (depends-on "solarized-theme")
+(depends-on "flycheck")
+; (depends-on "ergoemacs-mode")
+(depends-on "flx-ido")
+(depends-on "ido-vertical-mode")
+(depends-on "helm" :git "https://github.com/emacs-helm/helm")
+(depends-on "helm-projectile" :git "https://github.com/bbatsov/projectile")
+(depends-on "helm-ag")
+; ace-jump-mode
+; ace-jump-buffer
+; (depends-on "textmate")
+
+(depends-on "ggtags")
+
 (depends-on "ghc")
 (depends-on "ghci-completion")
 (depends-on "hindent")
 (depends-on "company-ghc")
 (depends-on "company-cabal" :git "https://github.com/iquiw/company-cabal")
-(depends-on "ide-backend-mode" :git "https://github.com/chrisdone/ide-backend-mode")
+; (depends-on "stack-ide" :git "https://github.com/commercialhaskell/stack-ide")
 ; (depends-on "flymake-haskell-multi")
 ; (depends-on "flymake-hlint")
-(depends-on "flycheck")
 (depends-on "haskell-mode")
-; (depends-on "textmate")
 (depends-on "shm")
-; (depends-on "ergoemacs-mode")
-(depends-on "flx-ido")
-(depends-on "ido-vertical-mode")
-(depends-on "helm")
-(depends-on "helm-projectile")
-(depends-on "helm-ag")
-; ace-jump-mode
-; ace-jump-buffer
+
 (depends-on "scala-mode2")
 (depends-on "ensime")
 (depends-on "sbt-mode")
+
 (depends-on "idris-mode")
+
+(depends-on "rust-mode")
+(depends-on "flycheck-rust")
+
 (depends-on "go-mode")
 (depends-on "company-go")
 (depends-on "golint")

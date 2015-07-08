@@ -20,3 +20,11 @@
 
 (when (memq window-system '(mac ns))
   (global-set-key (kbd "s-/") 'comment-or-uncomment-region-or-line))
+
+(defun cask-path-to-package (package path)
+  (concat (cask-dependency-path conf/cask-bundle package) "/" path)
+)
+
+(defun require-cask-package-file (package path)
+  (require (concat (cask-path-to-package package path) ".el"))
+)

@@ -4,7 +4,7 @@
   (setq cask-path "/usr/local/opt/cask"))
 
 (require 'cask (concat cask-path "/cask.el"))
-(cask-initialize)
+(defconst conf/cask-bundle (cask-initialize))
 
 (setq confd-directory (f-join user-emacs-directory "conf.d"))
 
