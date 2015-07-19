@@ -18,34 +18,37 @@ if args.force:
 cabal_bin_directory = ("%s/.bin" % cabal_sandbox_cwd)
 call(["mkdir", "-p", cabal_bin_directory])
 
+def cabal_install(pkg):
+  call([
+    "cabal",
+    "install",
+    "--upgrade-dependencies",
+    "--jobs=8",
+    "--force-reinstalls",
+    "--max-backjumps=1",
+    pkg
+  ])
+
+for pkg in ["happy", "Alex"]:
+  cabal_install(pkg)
+
 haskell_deps = {
   "misc" : [
-    "happy",
     "hasktags",
-    "hlint",
     "hoogle",
     "hindent"
   ],
-  "shm": [
-    "happy",
-    "structured-haskell-mode"
-  ],
-  "sh": [
-    "happy",
-    "stylish-haskell"
-  ],
+  "shm": ["structured-haskell-mode"],
+  "sh": ["stylish-haskell"],
   "ghc-mod": [
-    "happy",
+    "hlint",
     "ghc-mod"
   ],
   "hdevtools": ["hdevtools"],
   # "HaRe": ["HaRe"],
   "ghcid": ["ghcid"],
   # "ghci-ng": ["ghci-ng"],
-  "ide": [
-    "happy",
-    "ide-backend"
-  ]
+  "ide": ["ide-backend"]
 }
 
 for k, pkgs in haskell_deps.items():
@@ -55,15 +58,7 @@ for k, pkgs in haskell_deps.items():
   os.chdir(sandbox_cwd)
   call(["cabal", "sandbox", "init"])
   for pkg in pkgs:
-    call([
-      "cabal",
-      "install",
-      "--upgrade-dependencies",
-      "--jobs=8",
-      "--force-reinstalls",
-      "--max-backjumps=1",
-      pkg
-    ])
+    cabal_install(pkg)
 
   bin_directory = "%s/.cabal-sandbox/bin" % sandbox_cwd
   for app in os.listdir(bin_directory):
