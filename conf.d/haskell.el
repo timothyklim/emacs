@@ -1,4 +1,4 @@
-(add-to-list 'exec-path (f-join user-emacs-directory ".cabal-sandbox/bin"))
+(add-to-list 'exec-path (f-join user-emacs-directory "cabal-sandbox/.bin"))
 
 (require 'haskell-simple-indent)
 

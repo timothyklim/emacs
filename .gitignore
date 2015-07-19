@@ -1,5 +1,4 @@
-.cabal-sandbox
-cabal.sandbox.config
+cabal-sandbox
 ac-comphist.dat
 auto-save-list/
 recentf

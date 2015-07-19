@@ -31,8 +31,8 @@
 ; (depends-on "ergoemacs-mode")
 (depends-on "flx-ido")
 (depends-on "ido-vertical-mode")
-(depends-on "helm" :git "https://github.com/emacs-helm/helm")
-(depends-on "helm-projectile" :git "https://github.com/bbatsov/projectile")
+(depends-on "helm")
+(depends-on "helm-projectile")
 (depends-on "helm-ag")
 ; ace-jump-mode
 ; ace-jump-buffer
@@ -65,3 +65,8 @@
 (depends-on "golint")
 (depends-on "go-eldoc")
 (depends-on "go-errcheck")
+
+(depends-on "irony-mode")
+(depends-on "company-irony")
+(depends-on "flycheck-irony")
+(depends-on "irony-eldoc")
