@@ -34,8 +34,7 @@
 (depends-on "helm")
 (depends-on "helm-projectile")
 (depends-on "helm-ag")
-; ace-jump-mode
-; ace-jump-buffer
+(depends-on "avy")
 ; (depends-on "textmate")
 
 (depends-on "ggtags")
@@ -66,7 +65,7 @@
 (depends-on "go-eldoc")
 (depends-on "go-errcheck")
 
-(depends-on "irony-mode")
+(depends-on "irony")
 (depends-on "company-irony")
 (depends-on "flycheck-irony")
 (depends-on "irony-eldoc")

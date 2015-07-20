@@ -25,7 +25,7 @@ def cabal_install(pkg):
     "--upgrade-dependencies",
     "--jobs=8",
     "--force-reinstalls",
-    "--max-backjumps=1",
+    "--max-backjumps=8",
     pkg
   ])
 
