@@ -40,10 +40,7 @@ haskell_deps = {
   ],
   "shm": ["structured-haskell-mode"],
   "sh": ["stylish-haskell"],
-  "ghc-mod": [
-    "hlint",
-    "ghc-mod"
-  ],
+  "ghc-mod": ["ghc-mod"],
   "hdevtools": ["hdevtools"],
   # "HaRe": ["HaRe"],
   "ghcid": ["ghcid"],
