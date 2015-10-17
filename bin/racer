@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+export RUST_SRC_PATH=/Users/timothyklim/Development/rust/src
+
+cd /Users/timothyklim/Development/racer
+
+multirust run nightly cargo run --release -- "$@"

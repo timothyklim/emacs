@@ -35,7 +35,10 @@
 (depends-on "helm-projectile")
 (depends-on "helm-ag")
 (depends-on "avy")
+(depends-on "hydra")
 ; (depends-on "textmate")
+(depends-on "which-key")
+(depends-on "yaml-mode")
 
 (depends-on "ggtags")
 
@@ -49,6 +52,9 @@
 ; (depends-on "flymake-hlint")
 (depends-on "haskell-mode")
 (depends-on "shm")
+(depends-on "ebal")
+
+(depends-on "elm-mode")
 
 (depends-on "scala-mode2")
 (depends-on "ensime")
@@ -57,7 +63,12 @@
 (depends-on "idris-mode")
 
 (depends-on "rust-mode")
+(depends-on "racer")
+(depends-on "company-racer")
 (depends-on "flycheck-rust")
+(depends-on "cargo")
+(depends-on "cargo")
+(depends-on "rustfmt")
 
 (depends-on "go-mode")
 (depends-on "company-go")
@@ -69,3 +80,6 @@
 (depends-on "company-irony")
 (depends-on "flycheck-irony")
 (depends-on "irony-eldoc")
+
+(depends-on "js2-mode")
+(depends-on "ac-js2")

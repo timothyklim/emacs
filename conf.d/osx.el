@@ -59,6 +59,7 @@
   ; (define-key global-map [?\s-x] 'kill-region)
   ; (define-key global-map [?\s-y] 'ns-paste-secondary)
   (define-key global-map [?\s-z] 'undo)
+  (define-key global-map [?\s-Z] 'undo-tree-redo)
   ; (define-key global-map [?\s-|] 'shell-command-on-region)
   ; (define-key global-map [s-kp-bar] 'shell-command-on-region)
   ; ;; (as in Terminal.app)

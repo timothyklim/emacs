@@ -40,9 +40,8 @@ haskell_deps = {
   ],
   "shm": ["structured-haskell-mode"],
   "sh": ["stylish-haskell"],
-  "ghc-mod": ["ghc-mod"],
+  "ghc-mod": ["ghc-mod", "HaRe"],
   "hdevtools": ["hdevtools"],
-  # "HaRe": ["HaRe"],
   "ghcid": ["ghcid"],
   # "ghci-ng": ["ghci-ng"],
   "ide": ["ide-backend"]
@@ -70,12 +69,12 @@ for k, pkgs in haskell_deps.items():
 
 os.chdir(cwd)
 
-go_deps = [
-  "github.com/nsf/gocode",
-  "golang.org/x/tools/cmd/godoc",
-  "golang.org/x/tools/cmd/vet",
-  "github.com/golang/lint/golint"
-]
-
-for pkg in go_deps:
-  call(["go", "get", "-u", pkg])
+# go_deps = [
+#   "github.com/nsf/gocode",
+#   "golang.org/x/tools/cmd/godoc",
+#   "golang.org/x/tools/cmd/vet",
+#   "github.com/golang/lint/golint"
+# ]
+#
+# for pkg in go_deps:
+#   call(["go", "get", "-u", pkg])

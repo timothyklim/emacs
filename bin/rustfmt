@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+cd /Users/timothyklim/Development/rustfmt
+
+multirust run nightly cargo run --release -- "$@"
