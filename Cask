@@ -46,13 +46,11 @@
 (depends-on "ghci-completion")
 (depends-on "hindent")
 (depends-on "company-ghc")
-(depends-on "company-cabal" :git "https://github.com/iquiw/company-cabal")
-; (depends-on "stack-ide" :git "https://github.com/commercialhaskell/stack-ide")
-; (depends-on "flymake-haskell-multi")
-; (depends-on "flymake-hlint")
+(depends-on "company-cabal")
 (depends-on "haskell-mode")
 (depends-on "shm")
 (depends-on "ebal")
+(depends-on "cmm-mode")
 
 (depends-on "elm-mode")
 

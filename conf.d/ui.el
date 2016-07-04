@@ -15,6 +15,8 @@
 
 (global-linum-mode -1)
 
+(column-number-mode t)
+
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (global-prettify-symbols-mode t)

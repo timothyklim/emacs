@@ -25,6 +25,7 @@
   (lambda ()
     (ensime-scala-mode-hook)
     (setq prettify-symbols-alist scala-prettify-symbols)
+    (prettify-symbols-mode)
     (define-key scala-mode-map (kbd "C-x M-e") 'ensime-fully-reload)
   ))
 
