@@ -1,5 +1,6 @@
 (require 'ensime)
 
+(setq ensime-startup-snapshot-notification nil)
 (setq scala-prettify-symbols
   '(
     ("=>" . ?⇒)
